@@ -34,7 +34,9 @@ Systems Engineering
 ---
 <!--_class: invert-->
 # <!--fit-->How do I create one?
+
 ```sh
+
 $ kubectl get deployment
 NAME      READY   UP-TO-DATE   AVAILABLE   AGE
 rte-dev   2/2     2            2           16h
@@ -44,7 +46,7 @@ horizontalpodautoscaler.autoscaling/rte-dev autoscaled
 
 ```
 
-<!-- CPU based HPA's can be created and updated using the autoscale kubectl built-in. -->:
+<!-- CPU based HPA's can be created and updated using the autoscale kubectl built-in. -->
 
 
 ---
