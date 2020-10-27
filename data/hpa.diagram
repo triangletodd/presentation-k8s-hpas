@@ -1,0 +1,8 @@
+graph LR;
+  m[(MetricsServer)] ==> h[HPA];
+  h ==> d[Deployment];
+  d ==> r[ReplicaSet];
+  r ==> p0[Pod0];
+  r ==> p1[Pod1];
+  p0 ==> m
+  p1 ==> m
