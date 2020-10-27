@@ -20,6 +20,7 @@ Systems Engineering
 <!-- I work on the Systems Engineering team here at VST. -->
 <!-- Today I'm going to give you a quick demo of Kubernetes HPA's. -->
 
+
 ---
 <!--_class: lead invert-->
 # <!--fit-->What is an HPA?
@@ -28,6 +29,7 @@ Systems Engineering
 
 <!-- What is an HPA? -->
 <!-- By default, Horizontal Pod Autoscaler scales your pods based on CPU request utlization. -->
+
 
 ---
 <!--_class: invert-->
@@ -42,7 +44,8 @@ horizontalpodautoscaler.autoscaling/rte-dev autoscaled
 
 ```
 
-<!-- CPU based HPA's can be created and updated using the autoscale kubectl built-in. >
+<!-- CPU based HPA's can be created and updated using the autoscale kubectl built-in. -->:
+
 
 ---
 <!--class: invert-->
@@ -67,6 +70,7 @@ spec:
 <!-- This is the resource that the autoscale command created for us. -->
 <!-- It can be modified via the API the same as all other kubernetes resources. -->
 
+
 ---
 <!--class: invert-->
 # <!--fit-->How does it work?
@@ -75,6 +79,8 @@ spec:
 
 <!-- Pods are constantly feeding the metrics server with data that the HPA will then consume. -->
 <!-- When utilization surpasses your target, the HPA controller will set the replica count of your resource to the desired armount, based on utilization.-->
+
+
 ---
 <!--class: invert-->
 # <!--fit-->How does it REALLY work?
